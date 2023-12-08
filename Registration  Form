@@ -24,17 +24,16 @@ printf("enter your account");
 scanf("%s",usr.ac);
 printf("enter your phone");
 scanf("%s",usr.phone);
-printf("enter your password);
+printf("enter your password");
 scanf("%s",usr.password);
-usr.balance=0;
+usr.balance==0;
 strcpy(filename,usr.phone);
-fp=fopen(strcat(filenamne,"dat"),"w");
+fp=fopen(strcat(filename,"dat"),"w");
 fwrite(&usr,sizeof(struct user),3,fp);
 if(fwrite!=0)
 {
-printf("account are successfully registerd");
-else
-{
+printf("account are successfully registerd");}
+else{
 printf("something went wrong plz try again");
 }
 }}
