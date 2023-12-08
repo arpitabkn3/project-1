@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+struct user{
+char phone[50];
+char password[50];
+char ac[50];
+float balance[5];
+};
+void main()
+{
+struct user usr;
+int opt;
+FILE *fp;
+char filename[50];
+printf("\n\n what do you want to do");
+printf("\n\n register to your account");
+printf("\n\n login to your account");
+printf("\n\n your choice");
+scanf("%d",&opt);
+if(opt==1){
+system("cls");
+printf("enter your account");
+scanf("%s",usr.ac);
+printf("enter your phone");
+scanf("%s",usr.phone);
+printf("enter your password);
+scanf("%s",usr.password);
+usr.balance=0;
+strcpy(filename,usr.phone);
+fp=fopen(strcat(filenamne,"dat"),"w");
+fwrite(&usr,sizeof(struct user),3,fp);
+if(fwrite!=0)
+{
+printf("account are successfully registerd");
+else
+{
+printf("something went wrong plz try again");
+}
+}}
